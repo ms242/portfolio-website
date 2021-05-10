@@ -1,1 +1,91 @@
-body {background-color:#FBFCFF;}
+/*
+Colors used:
+Background Color (White): #FBFCFF;
+Text Color (Black): #141616;
+Accent Color (Orange): #EDAB26;
+Secondary Color (Grey): #474747;
+Secondary Color (Turquiose): #10707B;
+*/
+body {
+  background-color: #fbfcff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #141616; /*dark grey*/
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.50em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.00em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+paragraph {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #169aa8; /* blue */
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #9fa9ab; /* grey */
+}
+a:hover, a:focus {
+  color: #169aa8; /* blue */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #169aa8; /* blue */
+  opacity: .8;
+}
+.button {
+  display: inline-block;
+  background-color: #edab26; /* my orange color */
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #cc9a35; /* width of the border, type, color dark orange */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active {
+  color: #d99204;
+}
+.button.contact {
+  background-color: transparent;
+  color: #edab26;
+  text-transform: uppercase;
+  border: 2px solid #cc9a35;
+}
+.button.contact:hover, .button.contact:focus {
+  background-color: #edab26;
+  color: #ffffff;
+}
+.button.contact:active {
+  background-color: #edab26;
+  color: #ffffff;
+  opacity: .8;
+}
