@@ -6,6 +6,9 @@ Accent Color (Orange): #EDAB26;
 Secondary Color (Grey): #474747;
 Secondary Color (Turquiose): #10707B;
 */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #fbfcff;
   font-family: "Poppins", sans-serif;
@@ -88,4 +91,8 @@ a:active { /* selected link */
   background-color: #edab26;
   color: #ffffff;
   opacity: .8;
+}
+/* Layout Styling */
+.container {
+  padding: 0 15px;
 }
