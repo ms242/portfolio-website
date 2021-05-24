@@ -9,6 +9,29 @@ Secondary Color (Turquiose): #10707B;
 * {
   box-sizing: border-box;
 }
+header {
+  background-color: #edab26;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(93, 50, 50, 0.75);
+  -moz-box-shadow:    5px 5px 15px 0px rgba(93, 50, 50, 0.75);
+  box-shadow:         5px 5px 15px 0px rgba(93, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+nav > ul > {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #474747;
+}
 body {
   background-color: #fbfcff;
   font-family: "Poppins", sans-serif;
@@ -16,6 +39,9 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #141616; /*dark grey*/
+}
+main {
+  padding-top: 133px;
 }
 
 h1, h2, h3, h4 {
@@ -50,13 +76,24 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #9fa9ab; /* grey */
+  color: #474747; /* grey */
 }
 a:hover, a:focus {
   color: #169aa8; /* blue */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
+  color: #169aa8; /* blue */
+  opacity: .8;
+}
+nav > ul > li > a:visited {
+  color: #474747; /* grey */
+}
+nav > ul > li > a:hover, a:focus {
+  color: #169aa8; /* blue */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+nav > ul > li > a:active {
   color: #169aa8; /* blue */
   opacity: .8;
 }
@@ -95,4 +132,20 @@ a:active { /* selected link */
 /* Layout Styling */
 .container {
   padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#hero {
+  background-color: #edab26; /* orange */
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.logo {
+  max-width: 250px;
 }
