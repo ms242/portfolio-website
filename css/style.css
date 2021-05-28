@@ -97,6 +97,9 @@ nav > ul > li > a:active {
   color: #169aa8; /* blue */
   opacity: .8;
 }
+.aboutme {
+
+}
 .button {
   display: inline-block;
   background-color: #edab26; /* my orange color */
@@ -130,11 +133,30 @@ nav > ul > li > a:active {
   opacity: .8;
 }
 /* Layout Styling */
+.col{
+  width: 48%;
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+}
 .container {
   padding: 0 15px;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.social > ul > {
+  list-style-type: none; /* removes bullets */
+  margin: 10px 10px;
+  padding: 0;
+}
+.social > ul > li {
+  display: inline-block; /* all items on one line */
+  width: 150px;
+  height: auto;
+}
+.social > ul > li > a {
+  padding: 0 15px;
 }
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
@@ -145,6 +167,10 @@ nav > ul > li > a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+#aboutme {
+padding: 10px;
+margin: 10px;
 }
 .logo {
   max-width: 250px;
