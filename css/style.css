@@ -71,6 +71,9 @@ paragraph {
 img {
   width: 100%;
 }
+.project-image {
+  width: 50%;
+}
 a {
   color: #169aa8; /* blue */
   text-decoration: none; /* No underlining */
@@ -97,9 +100,7 @@ nav > ul > li > a:active {
   color: #169aa8; /* blue */
   opacity: .8;
 }
-.aboutme {
 
-}
 .button {
   display: inline-block;
   background-color: #edab26; /* my orange color */
@@ -151,7 +152,7 @@ nav > ul > li > a:active {
   padding: 0;
 }
 .social > ul > li {
-  display: inline-block; /* all items on one line */
+  display: inline; /* all items on one line */
   width: 150px;
   height: auto;
 }
