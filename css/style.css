@@ -19,7 +19,7 @@ header {
   position: fixed;
   width: 100%;
 }
-nav > ul > {
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
@@ -74,11 +74,22 @@ img {
 .project-image {
   width: 50%;
 }
+.project-image-s {
+  width: 43%
+}
 .project-image-m {
   width: 75%;
 }
+.project-image-proto {
+  width: 75%;
+  padding: 10px 0px;
+}
 .about-me-image {
   width: 25%;
+}
+.project-image-hifi {
+  width: 75%;
+  padding-bottom: 30px;
 }
 a {
   color: #169aa8; /* blue */
@@ -152,10 +163,13 @@ nav > ul > li > a:active {
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-.social > ul > {
+.about > h2 {
+  height: 1em;
+}
+.social > ul {
   list-style-type: none; /* removes bullets */
   margin: 10px 10px;
-  padding: 30px;
+  padding: 20px 0px 0px 0px;
 }
 .social > ul > li {
   display: inline; /* all items on one line */
