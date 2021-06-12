@@ -40,6 +40,9 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #141616; /*dark grey*/
 }
+p {
+  width: 100%;
+}
 main {
   padding-top: 99px;
 }
@@ -133,7 +136,6 @@ nav > ul > li > a:active {
   border-radius: 3px;
   border-bottom: 2px solid #cc9a35; /* width of the border, type, color dark orange */
   transition: 0.2s opacity;
-  transition-property: opacity;
   margin-bottom: 10px;
 }
 .button:hover {
@@ -196,8 +198,8 @@ nav > ul > li > a:active {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-.st12 {
-  animation: 3s color-change infinite alternate linear;
+.lantern {
+  animation: 5s lantern-move linear;
 }
 
 #about-page h3 {
@@ -214,7 +216,7 @@ nav > ul > li > a:active {
   width: 100%;
   text-align: center;
 }
-#hero span {
+#hero-span {
   display: block;
 }
 #aboutme {
@@ -236,6 +238,10 @@ margin: 10px;
   from {transform: translate(446px,48px);}
   to {transform: translate(100px, 48px);}
 }
+@keyframes lantern-move {
+  from {transform: translate(0,0);}
+  to {transform: translate(0px,-130px);}
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -250,6 +256,10 @@ Medium devices (640px and larger)
   }
   .col-md-6 {
     width: 50%;
+    padding: 0 10px 0 5px;
+  }
+  .col-md-3 {
+    width: 25%;
     padding: 0 10px 0 5px;
   }
   [class*="col-"] {
@@ -272,6 +282,9 @@ Large devices (1024px or larger)
   nav {
     width: auto;
     float: right;
+  }
+  p {
+    width: 50%;
   }
   .col-lg-3 {
     width: 30%;
