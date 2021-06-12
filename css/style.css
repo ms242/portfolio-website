@@ -41,7 +41,7 @@ body {
   color: #141616; /*dark grey*/
 }
 main {
-  padding-top: 110px;
+  padding-top: 99px;
 }
 
 h1, h2, h3, h4 {
@@ -91,6 +91,11 @@ img {
   width: 75%;
   padding-bottom: 30px;
 }
+.project-image-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 a {
   color: #169aa8; /* blue */
   text-decoration: none; /* No underlining */
@@ -123,10 +128,12 @@ nav > ul > li > a:active {
   background-color: #edab26; /* my orange color */
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #cc9a35; /* width of the border, type, color dark orange */
   transition: 0.2s opacity;
+  transition-property: opacity;
   margin-bottom: 10px;
 }
 .button:hover {
@@ -180,6 +187,22 @@ nav > ul > li > a:active {
 .social > ul > li > a {
   padding: 0 15px;
 }
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+.st12 {
+  animation: 3s color-change infinite alternate linear;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
   text-align: center; /* Centers text */
@@ -189,6 +212,10 @@ nav > ul > li > a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+#hero span {
+  display: block;
 }
 #aboutme {
 padding: 10px;
@@ -196,4 +223,93 @@ margin: 10px;
 }
 .logo {
   max-width: 250px;
+}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 40px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+  }
+  .col-md-6 {
+    width: 50%;
+    padding: 0 10px 0 5px;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 40px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+  }
+  .col-lg-3 {
+    width: 30%;
+    padding: 0 10px 0 5px;
+  }
+  .col-lg-5 {
+    width: 40%;
+    padding: 0 10px 0 5px;
+  }
+  .col-lg-6 {
+    width: 50%;
+    padding: 0 30px 0 30px;
+  }
+  .col-lg-7 {
+    width: 60%;
+    padding: 0 10px 0 5px;
+  }
+  .col-lg-9 {
+    width: 70%;
+    padding: 0 10px 0 5px;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
 }
