@@ -94,6 +94,10 @@ img {
   width: 75%;
   padding-bottom: 30px;
 }
+.project-image-hifi-2 {
+  width: 55%;
+  padding-bottom: 30px;
+}
 .project-image-animation {
   width: 100%;
   max-width: 100%;
@@ -107,7 +111,7 @@ a:visited { /* visited link */
   color: #474747; /* grey */
 }
 a:hover, a:focus {
-  color: #169aa8; /* blue */
+  color: #10707B; /* turquoise */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
@@ -143,11 +147,11 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 .button:active {
-  color: #d99204;
+  color: #d99204; /* orange */
 }
 .button.contact {
   background-color: transparent;
-  color: #edab26;
+  color: #edab26; /* my orange color */
   text-transform: uppercase;
   border: 2px solid #cc9a35;
 }
