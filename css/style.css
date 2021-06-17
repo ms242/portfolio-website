@@ -78,17 +78,18 @@ img {
   width: 50%;
 }
 .project-image-s {
-  width: 43%
+  width: 75%
 }
 .project-image-m {
-  width: 75%;
+  width: 70%;
+  padding-bottom: 20px;
 }
 .project-image-proto {
   width: 75%;
   padding: 10px 0px;
 }
 .about-me-image {
-  width: 25%;
+  width: 30%;
 }
 .project-image-hifi {
   width: 75%;
@@ -103,12 +104,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.ctr {
+  text-align: center;
+}
 a {
   color: #169aa8; /* blue */
   text-decoration: none; /* No underlining */
-}
-a:visited { /* visited link */
-  color: #474747; /* grey */
 }
 a:hover, a:focus {
   color: #10707B; /* turquoise */
@@ -117,9 +118,6 @@ a:hover, a:focus {
 a:active { /* selected link */
   color: #169aa8; /* blue */
   opacity: .8;
-}
-nav > ul > li > a:visited {
-  color: #474747; /* grey */
 }
 nav > ul > li > a:hover, a:focus {
   color: #169aa8; /* blue */
@@ -133,7 +131,7 @@ nav > ul > li > a:active {
 .button {
   display: inline-block;
   background-color: #edab26; /* my orange color */
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -196,12 +194,6 @@ nav > ul > li > a:active {
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 .lantern {
   animation: 5s lantern-move linear;
 }
@@ -234,18 +226,11 @@ margin: 10px;
   from {fill: #edc655;}
   to {fill: #f76414;}
 }
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
 @keyframes lantern-move {
   from {transform: translate(0,0);}
   to {transform: translate(0px,-130px);}
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -258,8 +243,15 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
+  body > ul {
+    margin-top: 0;
+  }
   .col-md-6 {
     width: 50%;
+    padding: 0 10px 0 5px;
+  }
+  .col-md-7 {
+    width: 70%;
     padding: 0 10px 0 5px;
   }
   .col-md-3 {
@@ -273,6 +265,9 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
+  }
+  .project-image-s {
+    width: 43%
   }
 }
 /* ==============================
@@ -288,10 +283,17 @@ Large devices (1024px or larger)
     float: right;
   }
   p {
-    width: 50%;
+    width: 60%;
+  }
+  body > ul {
+    margin-top: 0;
+  }
+  .col-lg-2 {
+    width: 20%;
+    padding: 0 10px 0 5px;
   }
   .col-lg-3 {
-    width: 30%;
+    width: 25%;
     padding: 0 10px 0 5px;
   }
   .col-lg-5 {
@@ -322,6 +324,9 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  }
+  .project-image-s {
+    width: 43%
   }
 }
 /* ==============================
