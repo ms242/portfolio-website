@@ -40,13 +40,18 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #141616; /*dark grey*/
 }
+main ul {
+  width: 100%
+}
 p {
   width: 100%;
 }
 main {
   padding-top: 99px;
 }
-
+footer {
+  text-align: center;
+}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -89,7 +94,7 @@ img {
   padding: 10px 0px;
 }
 .about-me-image {
-  width: 30%;
+  margin-top: 20px;
 }
 .project-image-hifi {
   width: 75%;
@@ -243,8 +248,14 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
-  body > ul {
+  p {
+    width: 80%;
+  }
+  body ul {
     margin-top: 0;
+  }
+  main ul {
+    width: 85%
   }
   .col-md-6 {
     width: 50%;
@@ -252,7 +263,7 @@ Medium devices (640px and larger)
   }
   .col-md-7 {
     width: 70%;
-    padding: 0 10px 0 5px;
+    padding: 0 10px 0 20px;
   }
   .col-md-3 {
     width: 25%;
@@ -283,10 +294,13 @@ Large devices (1024px or larger)
     float: right;
   }
   p {
-    width: 60%;
+    width: 80%;
   }
-  body > ul {
+  body ul {
     margin-top: 0;
+  }
+  main ul {
+    width: 60%
   }
   .col-lg-2 {
     width: 20%;
@@ -310,7 +324,7 @@ Large devices (1024px or larger)
   }
   .col-lg-9 {
     width: 70%;
-    padding: 0 10px 0 5px;
+    padding: 0 10px 0 20px;
   }
   [class*="col-"] {
     float: left;
