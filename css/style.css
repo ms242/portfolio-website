@@ -47,7 +47,7 @@ p {
   width: 100%;
 }
 main {
-  padding-top: 99px;
+  padding-top: 95px;
 }
 footer {
   text-align: center;
@@ -157,6 +157,7 @@ nav > ul > li > a:active {
   color: #edab26; /* my orange color */
   text-transform: uppercase;
   border: 2px solid #cc9a35;
+  margin-top: 30px;
 }
 .button.contact:hover, .button.contact:focus {
   background-color: #edab26;
