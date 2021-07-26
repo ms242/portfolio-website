@@ -1,5 +1,5 @@
 console.log("Welcome to Maria's Portfolio Site");
-funtion menuToggle() {
+function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
     x.className += ' responsive';
