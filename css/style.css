@@ -17,7 +17,7 @@ header {
   box-shadow:         5px 5px 15px 0px rgba(93, 50, 50, 0.75);
   position: fixed;
   width: 100%;
-  min-height: 70px;
+  min-height: 80px;
 }
 nav > ul {
   list-style-type: none;
