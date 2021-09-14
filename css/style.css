@@ -198,6 +198,7 @@ nav > ul > li > a:active {
   border-bottom: 2px solid #cc9a35; /* width of the border, type, color dark orange */
   transition: 0.2s opacity;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .button:hover {
