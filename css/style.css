@@ -112,10 +112,6 @@ h4 {
   font-weight: 400;
 }
 
-paragraph {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 img {
   width: 100%;
 }
@@ -278,7 +274,8 @@ nav > ul > li > a:active {
 }
 
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
 
 #hero h1 {
   text-align: center; /* Centers text */
@@ -294,6 +291,7 @@ nav > ul > li > a:active {
 
 #hero-span {
   display: block;
+  font-size: large;
 }
 
 #aboutme {
