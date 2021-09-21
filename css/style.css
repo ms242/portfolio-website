@@ -125,7 +125,7 @@ img {
 }
 
 .project-image-m {
-  width: 70%;
+  width: 100%;
   padding-bottom: 20px;
 }
 
@@ -135,6 +135,7 @@ img {
 }
 
 .about-me-image {
+  width: 50%;
   margin-top: 20px;
 }
 
@@ -387,6 +388,15 @@ Medium devices (640px and larger)
   .project-image-s {
     width: 43%;
   }
+
+  .project-image-m {
+    width: 70%;
+  }
+
+  .about-me-image {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* ==============================
@@ -463,6 +473,15 @@ Large devices (1024px or larger)
 
   .project-image-s {
     width: 43%;
+  }
+
+  .project-image-m {
+    width: 70%;
+  }
+
+  .about-me-image {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
